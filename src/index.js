@@ -15,6 +15,8 @@ function Greeting(){
 const Person = () => <h3>This is deepti</h3>;
 
 // explicit return 
-const Greet = () => {return <h1>Hello World!</h1>};
+const Greet = () => {
+  return <h1>Hello World!</h1>
+};
 
 ReactDom.render(<Greeting/>,document.getElementById('root'));
