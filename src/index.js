@@ -1,15 +1,26 @@
 import React from 'react';      // to create component we need to import react
 import ReactDom from 'react-dom'; //
 
-// For react to know that its a function used to build component
-// Capitalise the function name
-function Greeting(){
-  return <h1>Hi! This is deepti and this is my first component</h1>;
-  // this returned value is JSX
+// JSX Rules
+// JSX must return single value
+// return div/ section/ article/ Fragment
+// Use camelCase for html attributes
+// className instead of class
+// close every element....meaning that for even self closing tags use slash </> like <img src="" />
+// formatting .. add parenthesis while returning otherwise it is necessary to have opening tag on the line of return
+
+const NavBarComponent = () => {
+  return (
+    <>
+      <div className="nav-body">
+        <div className="logo">
+          <a href='#'>
+            Logo
+          </a>
+        </div>
+      </div>
+    </>
+  );
 }
 
-// here <Greeting/> is equvivalent to <Greeting></Greeting>
-// this injects the JSX into index.html present in public folder
-// render() takes in two arguments, 
-// what is being rendered and where it has to get rendered
-ReactDom.render(<Greeting/>, document.getElementById('root'));
+ReactDom.render(<NavBarComponent/>, document.getElementById('root'));
