@@ -45,12 +45,12 @@ const Book = ({author, title, img}) => {
     alert(`Item '${title} (by ${author})' removed from cart!`);
   }
   return (
-  <article className="book">
+  <article className="book" onMouseOver = {() => console.log(author)}>
     <img src={img} alt=""/> 
     <h1>{title}</h1>
     <h4>{author}</h4>
-    <button type="button" onClick={addItem}>Add to cart</button>
-    <button type="button" onClick={() => removeItem(title, author)}>Delete from cart</button>
+    <button type="button" onClick = {addItem}>Add to cart</button>
+    <button type="button" onClick = {() => removeItem(title, author)}>Delete from cart</button>
   </article>);
 }
 
