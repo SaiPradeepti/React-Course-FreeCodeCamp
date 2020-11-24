@@ -13,5 +13,20 @@ export const books = [
     author: 'Paulo Coelho',
     title: 'The Alchemist',
     img: 'https://images-eu.ssl-images-amazon.com/images/I/71aFt4%2BOTOL._AC_UL200_SR200,200_.jpg'
+  },
+  { id: 4,
+    author: 'Jay Shetty',
+    title: 'Think Like a Monk',
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/81s6DUyQCZL._AC_UL200_SR200,200_.jpg'
+  },
+  { id: 5,
+    author: 'Jeff Keller',
+    title: 'Attitude Is Everything',
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/710jnzKlDTL._AC_UL200_SR200,200_.jpg'
+  },
+  { id: 6,
+    author: 'James Clear',
+    title: 'Atomic Habits',
+    img: 'https://images-eu.ssl-images-amazon.com/images/I/81fTxxRYVvL._AC_UL200_SR200,200_.jpg'
   }
 ];
