@@ -26,20 +26,22 @@ const bookDetails = [
 function BookList(){
   return (
     <section className="booklist">
-      <Book img = {bookDetails[0].img} title = {bookDetails[0].title} author = {bookDetails[0].author} />
+      <Book img = {bookDetails[0].img} title = {bookDetails[0].title} author = {bookDetails[0].author} >
+        <p>This is children content of props. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos deserunt officiis corrupti maxime magni qui debitis provident sapiente quibusdam corporis?</p>
+      </Book>
       <Book img = {bookDetails[1].img} title = {bookDetails[1].title} author = {bookDetails[1].author} />
       <Book img = {bookDetails[2].img} title = {bookDetails[2].title} author = {bookDetails[2].author} />
     </section>);
 }
 
-const Book = (props) => {
-  console.log(props);
-  const {author, title, img} = props;
+const Book = ({author, title, img, children}) => {
+  // const {author, title, img, children} = props;
   return (
   <article className="book">
     <img src={img} alt=""/> 
     <h1>{title}</h1>
     <h4>{author}</h4>
+    <p>{children}</p>
   </article>);
 }
 
